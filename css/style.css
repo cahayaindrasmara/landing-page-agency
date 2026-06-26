@@ -1,0 +1,91 @@
+/* ----------------- */
+/* Import Statements */
+/* ----------------- */
+@import url("../css/vendor/bootstrap.min.css");
+@import url("../font/inter/stylesheet.css");
+
+
+/* ---------------------------- */
+/*  Custom Properties            */
+/* ---------------------------- */
+:root {
+  --primary: #ffffff;
+  --text-color: #4D4D4D;
+  --accent-color: #4CAF4F;
+  --color-1: #323232;
+  --font-1: "Inter", sans-serif;
+}
+
+/* ----------------- */
+/* Header and Navbar */
+/* ----------------- */
+
+#header {
+  background-color: var(--primary);
+  transition: all 0.5s ease;
+}
+
+.navbar {
+  margin: 24px 0;
+}
+
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-1);
+  color: var(--text-color);
+  padding: 16px;
+  text-align: center;
+}
+
+/* ---------------------------- */
+/* Buttons & Links              */
+/* ---------------------------- */
+.btn-accent {
+  background-color: var(--accent-color);
+  color: var(--primary);
+  padding: 16px 24px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 18px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------------------------- */
+/* Section and Container       */
+/* ---------------------------- */
+.section {
+  padding: 6em 2em 6em 2em;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.r-container {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo-container {
+  max-width: 180px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #header {
+    background: var(--background-color);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+  }
+}
