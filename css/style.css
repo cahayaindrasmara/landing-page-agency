@@ -96,6 +96,70 @@ a {
   max-width: 180px;
 }
 
+/* ---------------------------- */
+/* Swiper Setting              */
+/* ---------------------------- */
+.marquee-container {
+  overflow: hidden;
+
+  width: 100%;
+
+  display: flex;
+
+  --gap: 3rem;
+  --speed: 20;
+}
+
+.marquee-content {
+  display: inline-flex;
+
+  flex-shrink: 0;
+}
+
+.marquee {
+  animation:
+    marquee calc(400s / var(--speed))
+    linear
+    infinite;
+}
+
+.marquee-item {
+  padding-inline: var(--gap);
+
+  margin-right: 1rem;
+
+  width: max-content;
+
+  flex-shrink: 0;
+}
+
+/* ---------------------------- */
+/* Utilss                       */
+/* ---------------------------- */
+.box-community {
+  width: 40px;
+  height: 40px;
+  background-color: #E8F5E9;
+  border-radius: 18px 5px 18px 5px;
+}
+
+.box-community svg {
+  margin-left: -2rem;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform:
+      translateX(
+        calc(-100% - 1rem)
+      );
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   #header {
     background: var(--background-color);
