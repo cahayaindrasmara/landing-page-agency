@@ -50,6 +50,33 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ---------------------------- */
+/* Background and Setting Color      */
+/* ---------------------------- */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-accent-color {
+  background-color: var(--accent-color);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.color-1 {
+  color: var(--color-1);
+}
+
+/* ---------------------------- */
 /* Buttons & Links              */
 /* ---------------------------- */
 .btn-accent {
