@@ -14,6 +14,7 @@
   --accent-color: #4CAF4F;
   --color-1: #323232;
   --color-2: #F5F7FA;
+  --color-3: #263238;
   --font-1: "Inter", sans-serif;
 }
 
@@ -69,6 +70,9 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: var(--color-2);
 }
 
+.bg-color-3 {
+  background-color: var(--color-3);
+}
 
 .primary {
   color: var(--primary);
@@ -88,6 +92,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .color-2 {
   color: var(--color-2);
+}
+
+.color-3 {
+  color: var(--color-3);
 }
 /* ---------------------------- */
 /* Buttons & Links              */
@@ -208,6 +216,36 @@ a {
         calc(-100% - 1rem)
       );
   }
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.social-item {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  font-size: 17px;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.38) 1.21%,
+      rgba(255, 255, 255, 0) 96.49%
+    ),
+    #ff6800;
+  background-color: transparent;
+  animation: unset;
+}
+
+.social-item i {
+  font-size: 17px;
 }
 
 @media only screen and (max-width: 1024px) {
