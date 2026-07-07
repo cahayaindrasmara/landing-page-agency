@@ -93,6 +93,15 @@ h1, h2, h3, h4, h5, h6, p {
   pointer-events: auto;
 }
 
+.btn-accent-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  color: var(--accent-color);
+  min-width: 180px;
+}
+
 a {
   text-decoration: none;
 }
