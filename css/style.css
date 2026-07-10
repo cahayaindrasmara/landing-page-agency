@@ -192,6 +192,24 @@ a {
 }
 
 /* ---------------------------- */
+/* Forms and Inputs             */
+/* ---------------------------- */
+form {
+  background-color: transparent;
+  border-radius: 40px;
+  /* width: 75%; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.form input {
+  background-color: transparent;
+  border: transparent;
+}
+
+/* ---------------------------- */
 /* Utilss                       */
 /* ---------------------------- */
 .box-community {
