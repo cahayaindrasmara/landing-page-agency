@@ -3,17 +3,18 @@
 /* ----------------- */
 @import url("../css/vendor/bootstrap.min.css");
 @import url("../font/inter/stylesheet.css");
-
+@import url(../font/inter/stylesheet.css);
+@import url("../css/vendor/swiper-bundle.min.css");
 
 /* ---------------------------- */
 /*  Custom Properties            */
 /* ---------------------------- */
 :root {
   --primary: #ffffff;
-  --text-color: #4D4D4D;
-  --accent-color: #4CAF4F;
+  --text-color: #4d4d4d;
+  --accent-color: #4caf4f;
   --color-1: #323232;
-  --color-2: #F5F7FA;
+  --color-2: #f5f7fa;
   --color-3: #263238;
   --font-1: "Inter", sans-serif;
 }
@@ -22,7 +23,13 @@
 /* Typography                   */
 /* ---------------------------- */
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -38,7 +45,6 @@ h1, h2, h3, h4, h5, h6, p {
 .navbar {
   margin: 24px 0;
 }
-
 
 .nav-link {
   display: flex;
@@ -97,6 +103,7 @@ h1, h2, h3, h4, h5, h6, p {
 .color-3 {
   color: var(--color-3);
 }
+
 /* ---------------------------- */
 /* Buttons & Links              */
 /* ---------------------------- */
@@ -155,6 +162,39 @@ a {
 }
 
 /* ---------------------------- */
+/* Card Setting                 */
+/* ---------------------------- */
+.bg-hero {
+  background-color: var(--color-2);
+  margin-top: 3rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.hero-content h1 span {
+  color: var(--accent-color);
+}
+
+.hero-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 1rem;
+}
+
+.hero-image img {
+  max-height: 350px;
+}
+
+/* ---------------------------- */
 /* Swiper Setting              */
 /* ---------------------------- */
 .marquee-container {
@@ -175,10 +215,7 @@ a {
 }
 
 .marquee {
-  animation:
-    marquee calc(400s / var(--speed))
-    linear
-    infinite;
+  animation: marquee calc(400s / var(--speed)) linear infinite;
 }
 
 .marquee-item {
@@ -189,6 +226,12 @@ a {
   width: max-content;
 
   flex-shrink: 0;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /* ---------------------------- */
@@ -215,7 +258,7 @@ form {
 .box-community {
   width: 40px;
   height: 40px;
-  background-color: #E8F5E9;
+  background-color: #e8f5e9;
   border-radius: 18px 5px 18px 5px;
 }
 
@@ -229,10 +272,7 @@ form {
   }
 
   to {
-    transform:
-      translateX(
-        calc(-100% - 1rem)
-      );
+    transform: translateX(calc(-100% - 1rem));
   }
 }
 
@@ -252,11 +292,10 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(
-      circle at center,
+  background:
+    radial-gradient(circle at center,
       rgba(255, 255, 255, 0.38) 1.21%,
-      rgba(255, 255, 255, 0) 96.49%
-    ),
+      rgba(255, 255, 255, 0) 96.49%),
     #ff6800;
   background-color: transparent;
   animation: unset;
