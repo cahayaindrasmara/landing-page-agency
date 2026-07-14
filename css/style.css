@@ -200,7 +200,33 @@ a {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+.card-title.client {
   margin-bottom: 3rem;
+}
+
+.card-title.community {
+  text-align: center;
+}
+
+.card-community {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 24px 32px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(171, 190, 209, 0.2);
+}
+
+.card-community h4{
+  max-width: 190px;
+}
+
+.card-community p{
+  max-width: 270px;
 }
 
 /* ---------------------------- */
