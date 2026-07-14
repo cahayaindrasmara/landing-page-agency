@@ -229,6 +229,21 @@ a {
   max-width: 270px;
 }
 
+.card-content-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+}
+
 /* ---------------------------- */
 /* Swiper Setting              */
 /* ---------------------------- */
