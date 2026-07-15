@@ -284,6 +284,21 @@ a {
   gap: 0.5rem;
 }
 
+.img-customers img {
+  border-radius: 20px;
+}
+
+.card-text-customers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card-text-customers h4 {
+  color: var(--accent-color);
+}
+
 /* ---------------------------- */
 /* Swiper Setting              */
 /* ---------------------------- */
