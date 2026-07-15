@@ -206,7 +206,7 @@ a {
   margin-bottom: 3rem;
 }
 
-.card-title.community {
+.card-title.center {
   text-align: center;
 }
 
@@ -297,6 +297,33 @@ a {
 
 .card-text-customers h4 {
   color: var(--accent-color);
+}
+
+.card-community-updates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-community-updates img {
+  border-radius: 20px;
+  max-width: 350px;
+}
+
+.card-community-updates-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  background-color: var(--color-2);
+  padding: 1rem 1.5rem;
+  border-radius: 10px; 
+  max-width: 75%; 
+  margin-top: -6rem; 
+  min-height: 12rem;
 }
 
 /* ---------------------------- */
