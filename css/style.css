@@ -443,6 +443,10 @@ a {
   animation: marquee calc(400s / var(--speed)) linear infinite;
 }
 
+.reverse .marquee {
+  animation-direction: reverse;
+}
+
 .marquee-item {
   padding-inline: var(--gap);
   margin-right: 1rem;
